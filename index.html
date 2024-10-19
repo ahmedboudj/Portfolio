@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--pour rendre une page Web réactive sur les appareils mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Associer le css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/owl.carousel.min.css" />
+    <link rel="stylesheet" href="lib/owl.theme.default.min.css" />
+    <link rel="icon" href="images/ico.webp" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lib/animate.css" />
+    <title>Ahmed Boudjemaa</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="circle"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-md sticky fixed-top r-nav">
+       <!-- icon -->
+       <img
+       src="images/logo1.png"
+       width="200px"
+       height="90px"
+       style="margin-left: 100px; "
+       alt=""
+     />
+      <div class="container">
+       
+        <!-- navbar -->
+        <a class="navbar-brand animated fadeInLeft" href="#">AHMED BOUDJEMAA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarId"
+        >
+          <span><i class="fas fa-bars hamburger"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarId">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item animated fadeInRight">
+              <a class="nav-link" href="#home"
+                >Accueil <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item animated fadeInRight">
+              <a class="nav-link" href="#about">A Propos</a>
+            </li>
+            <li class="nav-item animated fadeInRight">
+              <a class="nav-link" href="#experience">Mes Services</a>
+            </li>
+            <li class="nav-item animated fadeInRight">
+              <a class="nav-link" href="#client">Mes projets</a>
+            </li>
+            <li class="nav-item animated fadeInRight">
+              <a class="nav-link" href="#work">Portfolio</a>
+            </li>
+            <li class="nav-item animated fadeInRight">
+              <a class="nav-link" href="#contact">Me Contacter</a>
+            </li>
+          </ul>
+
+          
+          <!----- Bouton mode sombre ------>
+          <button
+            id="themeToggle"
+            class="theme__icon"
+            title="Activer/désactiver le mode sombre"
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M430.1 347.9c-6.6-6.1-16.3-7.6-24.6-9-11.5-1.9-15.9-4-22.6-10-14.3-12.7-14.3-31.1 0-43.8l30.3-26.9c46.4-41 46.4-108.2 0-149.2-34.2-30.1-80.1-45-127.8-45-55.7 0-113.9 20.3-158.8 60.1-83.5 73.8-83.5 194.7 0 268.5 41.5 36.7 97.5 55 152.9 55.4h1.7c55.4 0 110-17.9 148.8-52.4 14.4-12.7 12-36.6.1-47.7zM120 216c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32zm40 126c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm64-161c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm72 219c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm24-208c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+              ></path>
+            </svg>
+          </button>
+
+          <div id="colorPicker" class="color-picker">
+            <button
+              class="color-option"
+              data-color="gray"
+              style="background-color: rgb(187, 183, 183)"
+            ></button>
+            <button
+              class="color-option"
+              data-color="black"
+              style="background-color: rgb(0, 0, 0)"
+            ></button>
+            <button
+              class="color-option"
+              data-color="white"
+              style="background-color: white"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="container-fluid header-content">
+        <div class="row">
+          <div class="col">
+            <div class="content-box text-center animated fadeInUp">
+              <!-- icon -->
+              <img
+              src="images/logo.png"
+              width="350px"
+              height="150px"
+              style="margin-bottom: 100px; "
+              alt=""
+            />
+              <p>
+                "Dans chaque projet, dans chaque ligne de code, trouvez la passion qui vous anime. 
+                C'est là que réside le secret de la maîtrise et du succès."
+              </p>
+              <a href="files/CV Ahmed Boudjemaa.docx" class="btn"
+                >Telecharger Mon CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-------------------------- a propos des Sections --------------------->
+    <section class="about r-p" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 way-fade-up">
+            <img
+              src="images/profile.jpg"
+              width="40%"
+              class="img-thumbnail"
+              alt="Profile Picture"
+              style="border-radius: 15px"
+            />
+          </div>
+          <div class="col-lg-6 way-fade-up mt-5 mt-lg-0">
+            
+            <h2 class="">
+              Bonjour !
+              <span style="color: #17a2b8">Je suis Ahmed Boudjemaa</span>
+            </h2>
+
+            <p>
+              Passionné par la création et la maintenance des sites web, je combine créativité et expertise technique pour offrir des expériences en ligne exceptionnelles. 
+            </p>
+            <p>
+              Je transforme des idées en applications web fonctionnelles et esthétiques, en étant attentif aux besoins des clients et aux dernières innovations du web. 
+            </p>
+            <p>
+              Rigoureux et à l'affût des tendances technologiques, je m'assure que chaque projet est moderne et performant, de la conception à la maintenance.
+              </p>
+            
+
+            <div class="r-icon">
+              <ul class="list-inline">
+                <li class="list-inline-item animated slideInUp">
+                  <a href="https://www.facebook.com/ahmed.boudjema.3382"> <i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item animated slideInUp">
+                  <a href="https://www.linkedin.com/in/ahmed-boudjemaa-20640b2b6/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item animated slideInUp">
+                  <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                </li>
+                <!-- <li class="list-inline-item animated slideInUp">
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- Services -------------------------->
+    
+    <section class="experience mb-5" id="experience">
+      <div class="container">
+        <div class="col way-fade-right">
+        <h2 style="text-align: center;">Mes compétences </h2><br>
+      </div>
+        <div class="row"> 
+          
+           <div
+            class="col-md-6 text-center d-flex align-items-center justify-content-center way-fade-up"
+          >
+            <p>Je propose mes services professionnels dans les langages de programmation et frameworks suivants, avec une indication de mon niveau de compétence pour chaque technologie</p>
+          </div>
+          <div class="col-md-6 way-fade-up">
+            <label>HTML</label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-color"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                90%
+              </div>
+            </div>
+
+            <label>Css</label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-color"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+              85%
+              </div>
+            </div>
+
+            <label>Java/kotlin</label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-color"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+
+            <label>Jquery</label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-color"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+
+            <label>Bootstrap</label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-color"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                85%
+              </div>
+            </div>
+
+            <label>PHP </label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-color"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+        </div> 
+       </div>
+    </section>
+
+    
+
+    <!------------------------- Engagez-moi --------------------->
+    <!-- <section class="hire r-p" id="hire">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col way-fade-left">
+            <h3 class="mb-4">Je suis disponible en freelance</h3>
+            <a href="#" class="btn r-btn">Engager-moi</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!----------------------------------------------- Témoignage ------------------------------------------->
+
+    <section class="client r-p bg-sec" id="client">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col way-fade-right">
+            <h2>Mes projets</h2>
+            <p>"Développement d'Expériences Web et Mobiles"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="owl-carousel owl-theme">
+
+              <!-- défilement des avis-->
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/pizza.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic">Application Web de Personnalisation et Gestion de Commandes de Pizzas en ASP.NET, C# et une DB local</p>
+                  <p class="test-name">App web pizza napolitana</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/Parfums.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Application Web de Gestion de Parfums avec Interface Interactive en React et Stockage Efficace en MongoDB
+                  </p>
+                  <p class="test-name">App web parfums store</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/flixtor.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic">
+                    Site Web de Découverte de Films et Séries Classés par Catégorie
+                  </p>
+                  <p class="test-name">App web flixtor</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/camping.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Application Mobile Interactive pour la Planification d'Activités de Camping
+                  </p>
+                  <p class="test-name">App mobile camping Irma</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/Lab1.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Labyrinth Game est une application mobile immersive créée en JavaScript
+                  </p>
+                  <p class="test-name">App mobile Labyrinthe</p>
+                </div>
+              </div>
+
+               <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/solarSystem2.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Application Mobile de découverte du Système Solaire : Exploration des Planètes et Astres en javascript
+                  </p>
+                  <p class="test-name">App mobile SolarSystem</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/thermomètre.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Thermomètre est une application mobile qui vous permet de mesurer la température en Celsius et en Fahrenheit
+                  </p>
+                  <p class="test-name">App mobile thermomètre</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/biblio.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Application Web de Gestion des Prêts de Bibliothèque crée en C# et ASP.NET et une base de données locale
+                  </p>
+                  <p class="test-name">App web gestion de Bibliothèque</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/laptop.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Application Web Dynamique pour la Gestion de Laptops en PHP
+                  </p>
+                  <p class="test-name">App web laptop store</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/Livre.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Application Web de Gestion des Livres en PHP
+                  </p>
+                  <p class="test-name">App web gestion des livres</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/Banque.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Un site web bancaire entièrement développé en HTML5, CSS3 et JavaScript.
+                  </p>
+                  <p class="test-name">App web gestion de Banque-Desjardin</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="test-item text-center">
+                  <div>
+                    <img
+                      src="images/restaurant.png"
+                      class="mx-auto test-img"
+                    />
+                  </div>
+                  <p class="text-muted font-italic mt-3">
+                    Ce site de restaurant, réalisé en suivant les meilleures pratiques de HTML5 et CSS3.
+                  </p>
+                  <p class="test-name">App web Restaurant</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------  Work ----------------------->
+    <section class="work r-p" id="work">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col mb-5 way-fade-left">
+            <h2>Mes réalisations</h2>
+            <p>Voici ce que j'ai développé:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 mx-auto mb-5 way-fade-left">
+            <button class="btn r-btn" data-filter="all">Tout</button>
+            <button class="btn r-btn" data-filter="1">Web</button>
+            <button class="btn r-btn" data-filter="2">Mobile</button>
+            <!-- <button class="btn r-btn" data-filter="3">Graphics</button>
+            <button class="btn r-btn" data-filter="4">Designer</button> -->
+          </div>
+        </div>
+        <div class="container">
+          <div class="row filter-container mx-auto img-loaded">
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/pizza.png" class="img-fluid" style="object-fit: cover;" alt="" />
+                <p>Pizzeria Napolitana</p>
+                <a href="https://github.com/ahmedboudj/Site-web-de-Pizza-en-asp"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/Parfums.png" class="img-fluid" alt="" />
+                <p>Parfums store</p>
+                <a href="https://github.com/ahmedboudj/Site-web-Parfum-front-end-1-2"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/flixtor.png" class="img-fluid" alt="" />
+                <p>Flixtor</p>
+                <a href="https://github.com/ahmedboudj/Flixtor"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="2"
+            >
+              <div>
+                <img src="images/camping.png" class="img-fluid" alt="" />
+                <p>Camping Irma</p>
+                <a href="https://github.com/ahmedboudj/App-Mobile-sur-le-Camping-"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="2"
+            >
+              <div>
+                <img src="images/Lab1.png" class="img-fluid" alt="" />
+                <p>Labyrinthe</p>
+                <a href="https://github.com/ahmedboudj/Labyrinthe"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="2"
+            >
+              <div>
+                <img src="images/solarSystem2.png" class="img-fluid" alt="" />
+                <p>Solar System</p>
+                <a href="https://github.com/ahmedboudj/SystemSolar"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+           
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="2"
+            >
+              <div>
+                <img src="images/thermomètre.png" class="img-fluid" alt="" />
+                <p>Thermomètre</p>
+                <a href="https://github.com/ahmedboudj/thermometre"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/biblio.png" class="img-fluid" alt="" />
+                <p>Bibliothèque</p>
+                <a href="https://github.com/ahmedboudj/Bibliotheque"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/laptop.png" class="img-fluid" alt="" />
+                <p>Laptops</p>
+                <a href="https://github.com/ahmedboudj/Web-site-Laptops"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/Livre.png" class="img-fluid" alt="" />
+                <p>Livre</p>
+                <a href="https://github.com/ahmedboudj/Livre"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/Banque.png" class="img-fluid" alt="" />
+                <p>Banque</p>
+                <a href="https://github.com/ahmedboudj/Banque-Desjardin"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1"
+            >
+              <div>
+                <img src="images/restaurant.png" class="img-fluid" alt="" />
+                <p>restaurant</p>
+                <a href="https://github.com/ahmedboudj/restaurant"><i class="fab fa-github"></i> Lien GitHub du projet</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------- Contact ------------------------->
+    <section class="contact r-p bg-sec" id="contact">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col way-fade-left">
+            <h2>Me contacter</h2>
+            <p>N’hésitez pas à me contacter</p>
+          </div>
+        </div>
+        <div class="row mt-5 way-fade-left">
+          <div class="col-md-4">
+            <div class="r-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="text-center">
+              <h5>M'appeler</h5>
+              <p class="text-muted">(438)-928-4335</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="r-icon"><i class="far fa-envelope"></i></div>
+            <div class="text-center">
+              <h5>E-mail</h5>
+              <p class="text-muted">ahmed-boudjema@outlook.com</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="r-icon"><i class="fas fa-map-pin"></i></div>
+            <div class="text-center">
+              <h5>Me visiter</h5>
+              <p class="text-muted">Montreal, Quebec, Canada</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <!-- ----------- Formulaire ------------------ -->
+            <form id="contactForm">
+              <div class="form-row way-fade-left">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Nom" name="nom" required />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Prenom" name="prenom" required />
+                </div>
+              </div>
+              <div class="form-group way-fade-left">
+                <input type="email" class="form-control" placeholder="E-mail" name="email" required />
+              </div>
+              <div class="form-group way-fade-left">
+                <textarea
+                  class="form-control"
+                  rows="7"
+                  placeholder="Laissez votre message ici ..."
+                  style="resize: none"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+             
+
+              <button type="submit" class="btn r-btn float-right way-fade-left">
+                Submit
+              </button>
+
+               <!-- icon -->
+               <div class="icon">
+                <div
+                  class="container h-100 d-flex align-items-center justify-content-center"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="r-icon text-center mt-3">
+                        <ul>
+                          <li class="list-inline-item animated slideInUp">
+                            <a href="https://www.facebook.com/ahmed.boudjema.3382"
+                              ><i class="fab fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li class="list-inline-item animated slideInUp">
+                            <a
+                              href="https://www.linkedin.com/in/ahmed-boudjemaa-20640b2b6/"
+                              ><i class="fab fa-linkedin"></i
+                            ></a>
+                          </li>
+                          <li class="list-inline-item animated slideInUp">
+                            <a href="https://github.com/"
+                              ><i class="fab fa-github"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!------------------------ Inclure le script EmailJS -->
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("Szg8LdgfZrZwNzjCt");  // "USER_ID" par identifiant EmailJS
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Paramètres d'envoi
+    emailjs.sendForm('service_z38z47g', 'template_gcfhp15', this)
+      .then(function(response) {
+        alert('Votre message a été envoyé avec succès !');
+        document.getElementById('contactForm').reset();
+      }, function(error) {
+        alert('Erreur lors de l\'envoi du message, réessayez plus tard.');
+      });
+  });
+</script>
+
+
+
+    <!---------- footer -------->
+    <footer>
+              <div class="footer_copyright">
+                <small>Ahmed Boudjemaa © Tout droits réservés</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery.smooth-scroll.js"></script>
+    <script src="lib/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/owl.carousel.min.js"></script>
+    <script src="lib/typed.js"></script>
+    <script src="lib/jquery.waypoints.min.js"></script>
+    <script src="lib/jquery.filterizr.min.js"></script>
+    <!-- Associer le js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
